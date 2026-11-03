@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+
+background: #f8f7ff;
+    color: #29243d;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: white;
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #6c4ce4;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #29243d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #6c4ce4;
+}
+
+/* Hero section */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(135deg, #eee9ff, #fdf1fa);
+}
+
+.intro {
+    color: #6c4ce4;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #6c4ce4;
+}
+
+.hero h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.description {
+    max-width: 550px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    background: #6c4ce4;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #4930a8;
+    transform: translateY(-3px);
+}
+
+/* About section */
+.about, .skills, .contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 20px auto 0;
+    color: #666;
+}
+
+/* Skills section */
+.skills {
+    background: white;
+}
+
+.skills h2, .about h2, .contact h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #f4f0ff;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.skill-card h3 {
+    color: #6c4ce4;
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact {
+    background: #eee9ff;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background: #29243d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 60vh;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .about, .skills, .contact {
+        padding: 50px 7%;
+    }
+}
+
+/* Feature card icons */
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+/* Section description */
+.section-description {
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* Improve feature cards */
+.skill-card {
+    border: 1px solid #e5ddff;
+    box-shadow: 0 5px 15px rgba(80, 60, 140, 0.05);
+}
+
+.skill-card:hover {
+    background: #eee9ff;
+    border-color: #c8b8ff;
+}
